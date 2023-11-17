@@ -1,63 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>基于 Serverless 的图片处理</title>
-    <link href="https://www.bootcss.com/p/layoutit/css/bootstrap-combined.min.css" rel="stylesheet">
+    <link href="https://fcnext.console.aliyun.com/applications/create?template=image-process-v3" rel="stylesheet">
 </head>
+
 <body>
-<div class="container-fluid" style="margin-top: 10px">
-    <div class="row-fluid">
-        <div class="span12">
-            <center>
-                <h3>
-                    基于 Serverless 的图片处理
-                </h3>
-            </center>
+    <div class="container-fluid" style="margin-top: 10px">
+        <div class="row-fluid">
+            <div class="span12">
+                <center>
+                    <h3>
+                        基于 Serverless 的图片处理
+                    </h3>
+                </center>
+            </div>
+        </div>
+        <div class="row-fluid">
+            <div class="span2">
+            </div>
+            <div class="span8">
+                <p>
+                    本应用基于 Serverless Devs 进行部署，可通过 <a id="appUrl"
+                        href="https://fcnext.console.aliyun.com/applications/create?template=image-process-v3">Serverless
+                        应用中心一键体验</a>。
+                </p>
+                <fieldset>
+                    <legend>图片拼接：</legend>
+                    <pre
+                        id="url">http://f1.muwu-s1.1237050315505682.cn-shanghai.fc.devsapp.net/pinjie?left=rockuw-sh/test.png&right=rockuw-sh/test.png</pre>
+                    <image
+                        src="http://f1.muwu-s1.1237050315505682.cn-shanghai.fc.devsapp.net/pinjie?left=rockuw-sh/test.png&right=rockuw-sh/test.png" />
+                </fieldset>
+            </div>
+            <div class="span2">
+            </div>
+        </div>
+        <div class="row-fluid">
+            <div class="span2">
+            </div>
+            <div class="span8">
+                <fieldset>
+                    <legend>图片水印：</legend>
+                    <pre
+                        id="url">http://f1.muwu-s1.1237050315505682.cn-shanghai.fc.devsapp.net/watermark?img=rockuw-sh/test.png&text=hello-fc</pre>
+                    <image
+                        src="http://f1.muwu-s1.1237050315505682.cn-shanghai.fc.devsapp.net/watermark?img=rockuw-sh/test.png&text=hello-fc" />
+                </fieldset>
+            </div>
+            <div class="span2">
+            </div>
+        </div>
+        <div class="row-fluid">
+            <div class="span2">
+            </div>
+            <div class="span8">
+                <fieldset>
+                    <legend>图片转换：</legend>
+                    <pre
+                        id="url">http://f1.muwu-s1.1237050315505682.cn-shanghai.fc.devsapp.net/format?img=rockuw-sh/test.png&fmt=jpg</pre>
+                    <image
+                        src="http://f1.muwu-s1.1237050315505682.cn-shanghai.fc.devsapp.net/format?img=rockuw-sh/test.png&fmt=jpg" />
+                </fieldset>
+            </div>
+            <div class="span2">
+            </div>
         </div>
     </div>
-    <div class="row-fluid">
-        <div class="span2">
-        </div>
-        <div class="span8">
-        <p>
-                本应用基于 Serverless Devs 进行部署，可通过 <a id="appUrl" href="#">Serverless 应用中心一键体验</a>。
-        </p>
-            <fieldset>
-                <legend>图片拼接：</legend>
-                <pre id="url">http://f1.muwu-s1.1237050315505682.cn-shanghai.fc.devsapp.net/pinjie?left=rockuw-sh/test.png&right=rockuw-sh/test.png</pre>
-                <image src="http://f1.muwu-s1.1237050315505682.cn-shanghai.fc.devsapp.net/pinjie?left=rockuw-sh/test.png&right=rockuw-sh/test.png" />
-            </fieldset>
-        </div>
-        <div class="span2">
-        </div>
-    </div>
-    <div class="row-fluid">
-        <div class="span2">
-        </div>
-        <div class="span8">
-            <fieldset>
-                <legend>图片水印：</legend>
-                <pre id="url">http://f1.muwu-s1.1237050315505682.cn-shanghai.fc.devsapp.net/watermark?img=rockuw-sh/test.png&text=hello-fc</pre>
-                <image src="http://f1.muwu-s1.1237050315505682.cn-shanghai.fc.devsapp.net/watermark?img=rockuw-sh/test.png&text=hello-fc" />
-            </fieldset>
-        </div>
-        <div class="span2">
-        </div>
-    </div>
-    <div class="row-fluid">
-        <div class="span2">
-        </div>
-        <div class="span8">
-            <fieldset>
-                <legend>图片转换：</legend>
-                <pre id="url">http://f1.muwu-s1.1237050315505682.cn-shanghai.fc.devsapp.net/format?img=rockuw-sh/test.png&fmt=jpg</pre>
-                <image src="http://f1.muwu-s1.1237050315505682.cn-shanghai.fc.devsapp.net/format?img=rockuw-sh/test.png&fmt=jpg" />
-            </fieldset>
-        </div>
-        <div class="span2">
-        </div>
-    </div>
-</div>
 </body>
+
 </html>

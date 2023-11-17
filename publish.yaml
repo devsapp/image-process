@@ -1,19 +1,13 @@
-# 规范文档参考:
-# 中文：https://github.com/Serverless-Devs/Serverless-Devs/blob/master/spec/zh/0.0.2/serverless_package_model/package_model.md#应用模型规范
-# English: https://github.com/Serverless-Devs/Serverless-Devs/blob/master/spec/en/0.0.2/serverless_package_model/package_model.md#Application-model-specification
-# --------------
-# Package 开发发布最佳实践:
-#   - [社区讨论 #62](https://github.com/Serverless-Devs/Serverless-Devs/discussions/62);
-#   - [社区讨论 #407](https://github.com/Serverless-Devs/Serverless-Devs/discussions/407);
-#   - [社区讨论 #439](https://github.com/Serverless-Devs/Serverless-Devs/discussions/439);
-
-Type: Application
-Name: image-process
+Edition: 3.0.0
+Type: Project
+Name: image-process-v3
 Provider:
   - 阿里云
-Version: 0.0.7
+Version: 0.0.1
 Description: 弹性高可用的图片处理功能
 HomePage: https://github.com/awesome-fc/image-process
+Organization: 阿里云函数计算（FC）
+Effective: Public
 Tags: #标签详情
   - 图片处理
 Category: 图文处理
@@ -21,13 +15,11 @@ Service:
   函数计算:
     Authorities:
       - AliyunFCFullAccess
-    Runtime: Python3
 Parameters:
   type: object
   additionalProperties: false # 不允许增加其他属性
   required: # 必填项
     - region
-    - serviceName
     - functionName
   properties:
     region:
@@ -50,16 +42,12 @@ Parameters:
         - ap-southeast-3
         - ap-southeast-5
         - ap-northeast-1
+        - ap-northeast-2
         - eu-central-1
         - eu-west-1
         - us-west-1
         - us-east-1
         - ap-south-1
-    serviceName:
-      title: 服务名
-      type: string
-      default: image-process
-      description: 服务名称，只能包含字母、数字、下划线和中划线。不能以数字、中划线开头。长度在 1-128 之间
     roleArn:
       title: RAM角色ARN
       type: string
@@ -72,9 +60,9 @@ Parameters:
         service: fc
         authorities:
           - AliyunOSSReadOnlyAccess
-          - AliyunFCDefaultRolePolicy
     functionName:
       title: 函数名
       type: string
-      default: image-process
-      description: 函数名称，只能包含字母、数字、下划线和中划线。不能以数字、中划线开头。长度在 1-64 之间
+      default: image-process-${default-suffix}
+      pattern: "^[a-zA-Z_][a-zA-Z0-9-_]{0,127}$"
+      description: 应用的函数名称, 只能包含字母、数字、下划线和中划线。不能以数字、中划线开头。长度在 1-128 之间
