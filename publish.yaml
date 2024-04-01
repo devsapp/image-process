@@ -3,8 +3,8 @@ Type: Project
 Name: image-process-v3
 Provider:
   - 阿里云
-Version: 0.0.1
-Description: 弹性高可用的图片处理功能
+Version: 0.0.2
+Description: 本案例将 Wand，这一功能强大、易于使用的Python图像处理库，快速搭建并部署到阿里云函数计算 FC。
 HomePage: https://github.com/awesome-fc/image-process
 Organization: 阿里云函数计算（FC）
 Effective: Public
