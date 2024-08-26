@@ -1,11 +1,11 @@
 Edition: 3.0.0
 Type: Project
-Name: image-process-v3
+Name: image-process-dipper
 Provider:
   - 阿里云
-Version: 0.0.2
+Version: 0.0.1
 Description: 本案例将 Wand，这一功能强大、易于使用的Python图像处理库，快速搭建并部署到阿里云函数计算 FC。
-HomePage: https://github.com/awesome-fc/image-process
+HomePage: https://github.com/devsapp/image-process/tree/dipper
 Organization: 阿里云函数计算（FC）
 Effective: Public
 Tags: #标签详情
