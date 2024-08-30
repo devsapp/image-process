@@ -16,6 +16,7 @@ resources:
       functionName: '{{ functionName }}'
       code: ./code
       role: '{{ roleArn }}'
+      logConfig: auto
       customDomain:
         domainName: auto
         protocol: HTTP
