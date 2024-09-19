@@ -1,11 +1,11 @@
 
 > 注：当前项目为 Serverless Devs 应用，由于应用中会存在需要初始化才可运行的变量（例如应用部署地区、函数名等等），所以**不推荐**直接 Clone 本仓库到本地进行部署或直接复制 s.yaml 使用，**强烈推荐**通过 `s init ${模版名称}` 的方法或应用中心进行初始化，详情可参考[部署 & 体验](#部署--体验) 。
 
-# image-process-dipper 帮助文档
+# image-process-cap 帮助文档
 
 <description>
 
-本案例将 Wand，这一功能强大、易于使用的Python图像处理库，快速搭建并部署到阿里云函数计算 FC。
+本案例展示了如何将 Wand，一款功能强大、易于使用的 Python 图像处理库，快速搭建并部署到云原生应用开发平台 CAP。Wand 提供了一个简单的 API 来创建、读取、保存、编辑和显示图像，支持多种常见图像格式，并具备丰富的图像处理功能。
 
 </description>
 
@@ -41,7 +41,7 @@
 
 <appcenter>
    
-- :fire: 通过 [云原生应用开发平台 CAP](https://devs.console.aliyun.com/applications/create?template=image-process-dipper) ，[![Deploy with Severless Devs](https://img.alicdn.com/imgextra/i1/O1CN01w5RFbX1v45s8TIXPz_!!6000000006118-55-tps-95-28.svg)](https://devs.console.aliyun.com/applications/create?template=image-process-dipper) 该应用。
+- :fire: 通过 [云原生应用开发平台 CAP](https://devs.console.aliyun.com/applications/create?template=image-process-cap) ，[![Deploy with Severless Devs](https://img.alicdn.com/imgextra/i1/O1CN01w5RFbX1v45s8TIXPz_!!6000000006118-55-tps-95-28.svg)](https://devs.console.aliyun.com/applications/create?template=image-process-cap) 该应用。
    
 </appcenter>
 <deploy>
@@ -53,7 +53,7 @@
 
 <appdetail id="flushContent">
 
-本案例将 Wand，这一功能强大、易于使用的Python图像处理库，快速搭建并部署到阿里云函数计算 FC。
+本案例将 Wand，这一功能强大、易于使用的Python图像处理库，快速搭建并部署到云原生应用开发平台 CAP。
 
 Wand 提供了一个简单的API来创建、读取、保存、编辑和显示图像。这个库在执行复杂的图像操作时能够保持较高的性能，并且在Windows、Linux、macOS和其他支持Python的平台上都能运行。Wand支持多种常见的图像文件格式，包括JPEG、PNG、GIF等，并提供了便捷的方法来读取和保存这些格式的文件。
 
